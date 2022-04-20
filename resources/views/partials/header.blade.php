@@ -1,7 +1,9 @@
 <header class="container-fluid">
     <div class="container">
         <figure>
-            <img src="{{asset('img/dc-logo.png')}}" alt="" />
+            <a href="{{route('home')}}">
+                <img src="{{asset('img/dc-logo.png')}}" alt="Home" />
+            </a>
         </figure>
         <div class="nav">
             <ul>
@@ -9,7 +11,7 @@
                     <a href=#>Characters</a>
                 </li>
                 <li>
-                    <a href=#>Comics</a>
+                    <a href="{{route('comics')}}">Comics</a>
                 </li>
                 <li>
                     <a href=#>Movies</a>
