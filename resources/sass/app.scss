@@ -78,15 +78,15 @@ header {
 
 // JUMBO
 
-#jumbo{
+#jumbo {
     height: 350px;
     width: 100%;
-  
-    & img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: top center;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
     }
 }
 
@@ -105,11 +105,11 @@ header {
         flex-wrap: wrap;
         height: 100%;
 
-        #nav-ul{
+        #nav-ul {
             display: flex;
             width: 100%;
             height: 100%;
-            justify-content:space-around;
+            justify-content: space-around;
             align-items: center;
         }
         #nav-li {
@@ -119,29 +119,68 @@ header {
             align-items: center;
             justify-content: center;
 
-            figure{
-                height:100%;
+            figure {
+                height: 100%;
 
-                img{
+                img {
                     height: 100%;
-                    width:90%;
+                    width: 90%;
                     aspect-ratio: 0;
-
                 }
             }
         }
-        #nav-li:last-child{
+        #nav-li:last-child {
             height: 50px;
         }
     }
 }
-  
-  
+
+// CONTENT-COMICS SECTION
+.content-section {
+    background-color: #1f1f1f;
+    min-height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    .container.comics {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        ul {
+            display:contents;
+
+            & li {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                // width: calc((100% / 6) - 60px);
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                aspect-ratio: 1;
+                flex-basis: 0;
+                flex-grow: 1;
+
+                img{
+                    height: 100%;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
 // FOOTER RULES
 footer {
     &.container-fluid {
         min-height: 300px;
-        background-image: url('/img/footer-bg.jpg');
+        background-image: url("/img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
