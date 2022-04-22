@@ -9,6 +9,9 @@
     font-size: 18px;
     font-weight: 300;
 }
+.relative{
+    position: relative;
+}
 .container-fluid {
     width: 100%;
     min-height: 100px;
@@ -174,6 +177,21 @@ header {
             }
         }
     }
+}
+
+// COMIC_DETAIL VIEW
+
+.blue_bar{
+    height:100px;
+    min-width:100%;
+    background-color: rgb(0, 102, 255);
+}
+.detail_poster{
+    position:absolute;
+    left: 0;
+    bottom:20%;
+    height:220px;
+    border: solid 1px white;
 }
 
 // FOOTER RULES

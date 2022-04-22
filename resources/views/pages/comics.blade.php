@@ -23,4 +23,6 @@
         </section>
 
     </div>
+
+    @include('partials.navbar')
 @endsection
