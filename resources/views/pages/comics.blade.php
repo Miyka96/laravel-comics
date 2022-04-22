@@ -11,7 +11,7 @@
             <div class="container comics">
                 <ul>
                     @foreach ($comics as $key => $value)
-                        <a href="#">
+                        <a href="{{route('comic_detail' , ['id' => $key] ) }}">
                             <li id="comics">
                                 <img src="{{ $value['thumb'] }}" />
                                 <p> {{ $value['series'] }}</p>

@@ -24,3 +24,18 @@ Route::get('/comics', function () {
         'comics' => $comics
     ]);
 })->name('comics');
+
+Route::get('/comics/{id}', function ($id) {
+
+    $comics = config('comics');
+
+    abort_if(!isset($comics[$id]), 404);
+
+    $detail = $comics[$id];
+
+        return view('pages.comic_detail',[
+            'comics' => $detail
+        ]);
+
+
+})->name('comic_detail') ->where('id','[0-9]+');
